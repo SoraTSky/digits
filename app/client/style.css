@@ -1,6 +1,13 @@
+<<<<<<< HEAD
 
 .digits-background{
   background: url='image/codeimage.jpg' no=repeat center center fixed;
   background-size: cover;
 }
 
+=======
+.digits-background{
+  backgroundImage: {'images/codeimage.jpg'} no-repeat center center fixed;
+  background-size: cover;
+}
+>>>>>>> landing-page-1
