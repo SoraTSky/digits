@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Image, Feed } from 'semantic-ui-react';
+import { Card, Image, Feed, ButtonContent } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 import { withRouter, Link } from 'react-router-dom';
 import Note  from './Note';
@@ -32,6 +32,9 @@ class Contact extends React.Component {
           </Card.Content>
           <Card.Content extra>
             <AddNote owner={this.props.contact.owner} contactId={this.props.contact._id}/>
+          </Card.Content>
+          <Card.Content extra>
+            <ButtonContent content={'DELETE'}>{this.removeItem(this.props.contact._id)}</ButtonContent>
           </Card.Content>
         </Card>
     );
